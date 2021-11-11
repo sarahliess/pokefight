@@ -3,7 +3,7 @@ const fs = require ('fs');
 const express = require('express')
 
 const app = express()
-const port = 3000
+const port = (process.env.PORT || 5000)
 
 //2. turning raw data into readable form
 //fs.readFileSync is built in feature that reads and returns file content
